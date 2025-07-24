@@ -1,1 +1,23 @@
 http://localhost:3000/
+
+###CREATE a TODO
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+  "title": "Vado al mare",
+  "description": "con Lollo"
+  
+}
+
+###login
+POST http://localhost:3000/api/auth/sign-in/email
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password123"
+}
+
+###GET all TODOs
+GET http://localhost:3000/api/todos
